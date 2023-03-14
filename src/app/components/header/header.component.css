@@ -1,0 +1,34 @@
+.head{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: red;
+  height: 3em;
+
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+a,a:visited{
+  text-decoration: none;
+  margin:0 5px;
+  color: black;
+  font-weight: bold;
+}
+b{
+  color: lightgray;
+}
+button{
+  height: 50%;
+  width: 20%;
+  background-color: orange;
+  border-radius: 10px;
+  border:.3 solid black;
+  margin: auto 0;
+}
+img{
+  margin:auto 0;
+}

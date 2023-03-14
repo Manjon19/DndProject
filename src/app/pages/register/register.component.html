@@ -1,0 +1,16 @@
+<div>
+  <label for="User">Usuario:</label> <input type="text" name="User" id="User" [(ngModel)]="userName" required>
+  <p *ngIf="!userValid" style="color:red;opacity:75%;border-radius: 10px;">Usuario incorrecto, no
+    puede estar vacío ni
+    tener carácteres especiales</p>
+  <label for="pass1">Contraseña:</label> <input type="password" name="pass1" id="pass1" [(ngModel)]="pass" required>
+  <p *ngIf="!passValid" style="color:red;opacity:75%;border-radius: 10px;">La contraseña tiene que
+    tener minimo 8 caracteres</p>
+  <label for="pass2">Repetir contraseña:</label> <input type="password" name="pass2" id="pass2" [(ngModel)]="pass2"
+    required>
+  <p *ngIf="!passCheck" style="color:red;opacity:75<%;border-radius: 10px;">Ambas contraseñas deben
+    coincidir</p>
+  <button type="button" (click)="register()">Confirmar
+    registro</button>
+
+</div>
